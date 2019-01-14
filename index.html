@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>turn base game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="classes.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="move.js"></script>
+    <script type="text/javascript" src="attack.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
+
+  </head>
+  <body>
+
+    <div id="center">
+      <h2 class="animation">LAUNDRYNIGHT</h2>
+      <h3 class="titleRotation">OPEN</h3>
+      <div id="buttonContainer">
+        <button id="startButton" onclick="drawCanvas(); hideStartButton();">Start Game</button>
+      </div>
+    </div>
+
+    <div id="gameLayoutWrapper"> 
+      <div class="column1">
+        <header id="sideTitle">
+          <h4>LAUNDRYNIGHT</h4>
+          <h5 class="titleRotation">OPEN</h5>
+        </header>
+
+        <p id="playerTurn"></p>
+
+          <div id="pinfo1">
+            <img src="img/player1head.png" id="img" class="player" alt="PLAYER 1" height="100" width="100">
+            <img src="img/soap.png" id="imgWeapon1" class="player" alt="PLAYER 2" height="50" width="50">
+          </div>
+          <div id="pinfo2">
+            <p id="p1stats" class="player">P1</p>
+            <p id="p1weapon" class="player">Weapon: Soap</p>
+          </div>      
+
+          <div id="pinfo1">
+            <img src="img/player2head.png" id="img" class="player" alt="PLAYER 1" height="100" width="100">
+            <img src="img/soap.png" id="imgWeapon2" class="player" alt="PLAYER 2" height="50" width="50">
+          </div>
+          <div id="pinfo2">
+            <p id="p2stats" class="player">P2</p>
+            <p id="p2weapon" class="player">Weapon: Soap</p>
+          </div>
+
+          <div id="instructions">
+            <p>Move up to 3 tiles <span><</span> <span>></span></p>
+            <p>Attack <span>A</span> Defend <span>D</span></p>
+          </div>
+          
+          <p id="footer">LaundryNight-Open Copyright © 2018 LVFR</p>
+        </div>
+      </div>
+
+      <div class="column2">      
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    </div>
+
+    <div id="endGame">
+      <h1>GAME OVER</h1>
+      <div id="winner">
+        <p>The winner is</p>
+        <img src="" id="winnerImg" class="player" alt="PLAYER 1" height="100" width="100">
+      </div>
+            
+      <button id="startButton" onclick="document.location.reload()">Reload</button>
+      </div>
+    </div>
+
+ </body>
+
+</html>

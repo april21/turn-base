@@ -1,0 +1,199 @@
+* {
+  background-color: #6A34AE;
+  /*outline: 1px dashed red; */
+  box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Halogen Gas Lights';
+    src: url('assets/Halogen Gas Lights.otf');
+}
+
+body {
+  margin: auto;
+  width: 80%;
+  zoom: 80%;
+}
+
+h2 {
+  font-family: 'Halogen Gas Lights';
+  font-size: 80px;
+  color: #FF00F9;
+}
+
+h4 {
+  font-family: 'Halogen Gas Lights';
+  font-size: 50px;
+  color: #FF00F9;
+  text-align: left;
+}
+
+@-webkit-keyframes colorchange {
+
+  0% {
+
+    color: #FF00F9;
+  }
+
+  0% {
+
+    color: #8e44ad;
+  }
+
+}
+
+h3 {
+  font-family: 'Halogen Gas Lights';
+  font-size: 60px;
+  color: #00F9FF;
+  /*height: auto;*/
+  margin-left: 45%;
+  margin-top: -130px;
+  background-color: transparent;
+  -webkit-animation:colorchange2 0.5s infinite alternate;
+}
+
+h5 {
+  font-family: 'Halogen Gas Lights';
+  font-size: 35px;
+  color: #00F9FF;
+  margin-left: 80%;
+  margin-top: -100px;
+  background-color: transparent;
+  -webkit-animation:colorchange2 0.5s infinite alternate;
+}
+
+@-webkit-keyframes colorchange2 {
+  0% {
+
+    color: #00F9FF;
+  }
+
+  0% {
+
+    color: #300E93;
+  }
+
+}
+
+
+.titleRotation {
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+}
+
+#gameLayoutWrapper {
+  clear: both;
+  color: white;
+  font-size: 18px;
+  font-family: monospace;
+  display: none;
+  line-height: 50px;
+}
+
+
+#playerTurn {
+  font-size: 30px;
+  border: 2px solid yellow;
+  border-radius: 2rem;
+  color: yellow;
+  display: block;
+}
+
+.column1 {
+  flex: 20%;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+.column2 {
+  flex: 20%;
+  float: left;
+  width: 70%;
+  text-align: center;
+}
+
+
+header {
+  width: 100%;
+}
+
+
+#center {
+  text-align: center;
+}
+
+#pinfo1 {
+  float: left;
+  clear: left;
+  overflow: auto;
+  width: 50%;
+}
+
+#pinfo2 {
+  float: left;
+  width: 50%;
+  font-family: monospace;
+  font-size: 22px;
+  text-align: left;
+}
+
+
+button {
+  border: 1px solid #FF00F9;
+  border-radius: 1rem;
+  color: white;
+  padding: 50px;
+  box-shadow: 0px 5px  #300E93;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+canvas {
+  margin-top: 40px;
+}
+
+
+p {
+  margin: 10px;
+  padding: 0;
+}
+
+
+
+span {
+  font-family: monospace;
+  border: 1px solid #FF00F9;
+  box-shadow: 0px 5px  #300E93;
+  padding: 10px;
+  border-radius: 10px;
+  clear: both;
+}
+
+#footer {
+  clear: both;
+  display: block;
+  font-family: monospace;
+  font-size: 16px;
+  color: #CEBBFC;
+  padding: 5px;
+  border-radius: 1rem;
+  /*border: #300E93;*/
+  /*background-color: #300E93;*/
+  margin-top: 250px;
+}
+
+#endGame {
+  display: none;
+  line-height: 80px;
+  color: yellow;
+  margin: auto;
+  text-align: center;
+  font-family: 'Halogen Gas Lights';
+  font-size: 50px;
+}
+
